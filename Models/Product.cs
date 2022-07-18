@@ -1,11 +1,7 @@
-﻿using TestMenu.Models.Enum;
-
-namespace TestMenu.Models
+﻿namespace TestMenu.Models
 {
-    public class Product
+    public class Product : MenuItem
     {
-        public int Prd_Id { get; set; }
-        public string Prd_Name { get; set; }
-        public EType Prd_Type { get; set; }
+       
     }
 }

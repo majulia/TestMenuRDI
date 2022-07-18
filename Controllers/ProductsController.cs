@@ -20,7 +20,35 @@ namespace TestMenu.Controllers
         {
             try
             {
-                return _repo.GetProduct();
+                return _repo.GetProductsActive();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet("GetChoices")]
+        public IEnumerable<Choice> GetChoices()
+        {
+            try
+            {
+                return _repo.GetChoicesActive();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet("GetValueMeal")]
+        public IEnumerable<ValueMeal> GetValueMeal()
+        {
+            try
+            {
+                return _repo.GetValueMealsActive();
             }
             catch (Exception)
             {

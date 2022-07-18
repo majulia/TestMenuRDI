@@ -2,7 +2,7 @@
 {
     public class ProductComponents
     {
-        public int Prod_Id { get; set; }
-        public int Clhid_Prd_Id { get; set; }
+        public int ProdId { get; set; }
+        public int ChildPrdId { get; set; }
     }
 }
